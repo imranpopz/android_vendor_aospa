@@ -101,6 +101,10 @@ ifneq ($(TARGET_EXCLUDE_GMODULES), true)
 $(call inherit-product-if-exists, vendor/google/modules/build/mainline_modules.mk)
 endif
 
+# SimpleDeviceConfig
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
      vendor/aospa/target/config/aospa_vendor_framework_compatibility_matrix.xml
